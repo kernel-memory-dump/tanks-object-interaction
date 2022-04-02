@@ -9,7 +9,7 @@ export class MainBattleTank extends Tank {
         return MAIN_BATTLE_TANK_DAMAGE;
     }
     isDestroyed(): boolean {
-        return this.health >= 0;
+        return this.health <= 0;
     }
     receiveDamage(amountOfDamage: number) {
         this.health -= amountOfDamage * MAIN_BATTLE_TANK_RECEIVED_DAMAGE_REDUCTION;

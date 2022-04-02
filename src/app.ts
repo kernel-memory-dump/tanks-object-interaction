@@ -21,6 +21,6 @@ const tank2 = new MainBattleTank(attackUntilDoneStrategy, defenseStrategyWithCou
 tank1.attack(tank2);
 
 const tank3 = new AssaultTank(attackUntilDoneStrategy, defenseStrategyWithCounterAttack);
-const tank4 = new MainBattleTank(attackTwoTimesStrategy, defenseStrategyWithCounterAttack);
+const tank4 = new MainBattleTank(attackTwoTimesStrategy, defenseStrategyNoCounterAttack);
 
 tank3.attack(tank4);

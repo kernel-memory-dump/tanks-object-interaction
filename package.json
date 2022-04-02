@@ -7,7 +7,7 @@
     "scripts": {
         "build-ts": "tsc",
         "build": "npm run build-ts",
-        "start": "npm run build && tsc && node dist/app.js",
+        "start": "npm run build && node dist/app.js",
         "test": "jest --forceExit --coverage --verbose",
         "watch-ts": "tsc -w",
         "debug": "npm run build && tsc -w & nodemon --inspect dist/app.js"
